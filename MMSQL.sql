@@ -2,7 +2,9 @@
 
 SELECT *
 FROM crime_scene_report
-WHERE date IN ('20180115') AND type IN ('murder') AND city IN ('SQL City');
+WHERE date IN ('20180115') 
+	AND type IN ('murder') 
+	AND city IN ('SQL City');
 
 Return:
 
@@ -34,7 +36,8 @@ id         name                  license_id        address_number        address
 
 SELECT *
 FROM person
-WHERE address_street_name IN ('Franklin Ave') AND name LIKE 'Annabel %'
+WHERE address_street_name IN ('Franklin Ave') 
+	AND name LIKE 'Annabel %'
 
 Return - Second Witness:
 
